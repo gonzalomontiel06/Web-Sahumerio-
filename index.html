@@ -19,12 +19,12 @@
     </head>
 <body id="body">
     <div class="container-fluid p-0">
-        <header class="col-lg-12 col-md-12 col-sm-12 img-fluid background-img m-0">
+        <header class="img-fluid header m-0">
             
             <!-- BARRA DE NAVEGACION -->
             
-            <nav class="navegador">
-                <ul class="d-flex flex-row bd-highlight mb-3 justify-content-center navegador__listanav">
+            <nav class="col-lg-12 col-md-12 col-sm-12 navegador">
+                <ul class="d-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap navegador__listanav">
                     <li class="p-2 bd-highlight"><a href="index.html">Home</a></li>
                     <li class="p-2 bd-highlight"><a href="pages/tienda.html">Tienda</a></li>
                     <li class="p-2 bd-highlight"><a href="pages/nosotros.html">Nosotros</a></li>
@@ -35,9 +35,9 @@
             
             <!-- IMG FONDO + LOGO + TITULO -->
             
-            <section class="col-lg-12 col-md-12 col-sm-12 box-banner">
-                <div class="box-banner__logo"><a href="index.html"><img class="box-banner__logo--size" src="img/logotransparente.png" alt="img-logo"></a></div>
-                <div class="box-banner__parrafo">
+            <section class="row box-banner">
+                <div class="col-lg-6 col-md-12 col-sm-12 box-banner__logo"><a href="index.html"><img class="box-banner__logo--size" src="img/logotransparente.png" alt="img-logo"></a></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 box-banner__parrafo">
                     <h1 class="box-banner__parrafo--tienda">tienda<h1>
                     <h2 class="box-banner__parrafo--tienda-1">de sahumerios</h2>
                 </div>
@@ -48,11 +48,11 @@
         
         <!-- PRIMER ARTICULO -->
         
-        <main class="row p-0 m-0 main-1">
+        <main class="p-0 m-0 main-1">
             <div data-aos="zoom-in-right">    
-                <article class="col-lg-12 col-md-12 col-sm-12 article-1">
-                    <img class="article-1__img" src="img/conosahumerio.jpg" alt="sahumerio-cono">
-                    <div class="article-1__contenedor">
+                <article class="row article-1">
+                    <img class="col-lg-6 col-md-6 col-sm-12 article-1__img" src="img/conosahumerio.jpg" alt="sahumerio-cono">
+                    <div class="col-lg-6 col-md-6 col-sm-12 article-1__contenedor">
                         <p class="article-1__parrafo">Los sahumerios hacen referencia al proceso y resultado de sahumar, por lo general a partir de inciensos, para perfumar el ambiente o proceder a su purificación. Los inciensos son velas que se obtienen de resinas aromáticas vegetales.</p>
                         <p class="article-1__parrafo">En la cultura popular se dice que usar sahumerios puede ayudar a cambiar la vibración del hogar, sobre todo cuando se perciben energías negativas.</p>
                     </div>
@@ -62,9 +62,9 @@
             <!-- SEGUNDO ARTICULO -->
             
             <div data-aos="zoom-in-right">    
-                <article class="col-lg-12 col-md-12 col-sm-12 article-2"> 
-                        <img class="article-2__img" src="img/sahumerio1.jpg" alt="sahumerio-varilla">
-                        <div class="article-2__contenedor">
+                <article class="row article-2"> 
+                        <img class="col-lg-6 col-md-6 col-sm-12 article-2__img" src="img/sahumerio1.jpg" alt="sahumerio-varilla">
+                        <div class="col-lg-6 col-md-6 col-sm-12 article-2__contenedor">
                             <p class="article-2__parrafo-2">El incienso, tanto en sahumerio, madera o carboncitos, se usa de forma generalizada tanto en fitoterapia como en aromaterapia para aliviar y armonizar el cuerpo y la mente.</p>
                             <p class="article-2__parrafo-2">Ayuda a reducir la ansiedad al desacelerar el sistema nervioso, lo que hace que su cuerpo y mente se relajen</p>
                         </div>
@@ -74,12 +74,12 @@
         
         <!-- INICIO FOOTER -->
         
-        <footer class="footer col-lg-12 col-md-12 col-sm-12">
+        <footer class="footer">
             <section class="d-flex footer__seccion">
-                <div class="footer__box-logo">
+                <div class="col-lg-4 col-md-4 col-sm-4 footer__box-logo">
                     <a href="index.html"><img src="img/logotransparente.png" alt="logo-marca" width="300px" height="300px"></a>
                 </div>
-                <div class="footer__box-contact">
+                <div class="col-lg-4 col-md-4 col-sm-4 footer__box-contact">
                     <div class="footer__box-contact--subtitulo"><h4>contactanos</h4></div>
                     <a href="https://wa.me/541160413241?text=Hola,%20te%20escribo%20a%20traves%20de%20la%20tienda%20El%20Loco%20Del%20Sahumerio..">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -101,7 +101,7 @@
                         </svg> Ubicacion
                     </a>
                 </div>
-                <div class="footer__box-map">
+                <div class="col-lg-4 col-md-4 col-sm-4 footer__box-map">
                     <h4 class="footer__box-map--subtitulo">enlaces</h4>
                     <div class="footer__box-map__enlaces">
                         <a href="index.html">home</a>

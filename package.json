@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalomontiel06/Web-Sahumerio-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzalomontiel06/Web-Sahumerio-/issues"
+  },
+  "homepage": "https://github.com/gonzalomontiel06/Web-Sahumerio-#readme",
   "description": ""
 }

@@ -1,3 +1,6 @@
+
+// -- RESETEO --//
+
 *{
     margin: 0;
     padding: 0;
@@ -7,36 +10,36 @@
 
 }
 
+// -- MAPS -- //
+
 @mixin box-galeria($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
 
-$parrafos: 3em;
+// -- VARIABLES -- //
+
+$parrafos: 1em;
+
+$parrafos-size: 3em;
+
+$box-size: 3rem; 
 
 #body{
     background-color: #FFFFFF;
 }
 
-/* -- HEADER -- */
+// -- HEADER -- //
 
-.box-banner{
-    display: flex;
-    
-    &__parrafo{
-        width: 600px;
-        text-align: center;
-        position: relative;
-        left: 130px;
-    }
-}
-
-.background-img{
+.header{
+    width: 100%;
     background-image: url(../img/sahumerio.jpg);
-    background-size: 100% 800px;
+    background-size: 100% 35rem;
+
 }
 
 .navegador{
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     position: sticky;
     top: 0%;
@@ -56,6 +59,17 @@ $parrafos: 3em;
     }
 }
 
+.box-banner{
+    display: flex;
+    
+    &__parrafo{
+        width: 600px;
+        text-align: center;
+        position: relative;
+        left: 130px;
+    }
+}
+
 @keyframes aparecer{
     0% {opacity: 0;
 }
@@ -64,7 +78,7 @@ $parrafos: 3em;
 }
 }
 
-/* -- SECCION 1 -- */
+// -- SECCION 1 -- //
 
 .box-banner__logo{
     width: 500px;
@@ -73,7 +87,6 @@ $parrafos: 3em;
     &--size{
         width: 75%;
         height: 400px;
-        margin-top: 50px;
     }
 }
 
@@ -382,123 +395,7 @@ label{
     margin-top: 20px;
 }
 
-/* -- MEDIA -- */
-
-@media screen and (min-width: 320px) and (max-width: 767px){
-        
-        #body{
-            width: 768px;
-        }
-        .box-banner{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .article-2__img{
-            margin-top: 80px;
-        }
-        .background-img{
-            background-size: 800px 700px;
-            background-repeat: no-repeat;
-        }
-        .box-banner__logo--size{
-            margin: 0;
-        }
-        .box-banner__parrafo{
-            position: relative;
-            left: 0px;
-        }
-        .box-banner__parrafo--tienda{
-            margin: 0px;
-            padding: 0px;
-        }
-        .box-banner__parrafo--tienda-1{
-            margin: 0px;
-            padding: 0px;
-        }
-        .aside__img-memoria{
-            margin-top: 0;
-        }
-        
-        .footer__box-logo{
-            padding: 0;
-        }
-        
-        .footer__box-map{
-            margin-left: 0;
-        }
-        
-        .footer__box-contact{
-            width: 200px;
-        
-            &--subtitulo{
-                width: 190px;
-            }
-        }
-        
-        .footer__seccion{
-            height: 400px;
-        }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-        
-        .box-banner{
-            height: 650px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .box-banner__logo--size{
-            margin: 0;
-        }
-        .box-banner__parrafo{
-            position: relative;
-            left: 0px;
-            text-align: center;
-        }
-        .box-banner__parrafo--tienda-1{
-            margin: 0px;
-        }
-        .aside__img-memoria{
-            margin-top: 0;
-        }
-        
-        .footer__box-logo{
-            padding: 0;
-        }
-        
-        .footer__box-map{
-            margin-left: 0;
-        }
-        
-        .footer__box-contact{
-            width: 200px;
-        
-            &--subtitulo{
-                width: 190px;
-            }
-        }
-        
-        .footer__seccion{
-            height: 350px;
-        }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px){
-        
-        .aside__img-memoria{
-            margin-top: 0;
-        }
-        .box-banner__parrafo{
-            position: relative;
-            left: 0px;
-        }
-}
-
-/* -- GALERIA -- */ 
+// -- GALERIA -- // 
 
 .subtitulo-productos{
     @extend .subtitulo;
@@ -529,7 +426,7 @@ label{
 }
 
 .article-3__box--parrafo-sahumerio{
-    font-size: $parrafos;
+    font-size: 3rem;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Quicksand', sans-serif;
@@ -594,5 +491,155 @@ label{
     &--parrafo-mates{
         @extend .article-3__box--parrafo-sahumerio;
         padding-top: 40%;
+    }
+}
+
+// -- MEDIA -- //
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .header{
+        background-image: none;
+    }
+    
+    .navegador{
+        background-color: rgba(0, 0, 0, 0.11);
+        position: none;
+            
+        &__listanav{
+            padding: 0;
+            margin: 0;
+                
+            & li a{
+                font-size: $parrafos;
+            }
+        }
+    }
+    
+    .box-banner__logo{
+        height: 25rem;
+            
+        &--size{
+            margin: 0;
+            width: 100%;
+        }
+    }
+    
+    .box-banner__parrafo{
+        left: 0px;
+        
+        &--tienda{
+        margin: 0px;
+        padding: 0px;
+        
+            &-1{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    
+    .article-1{
+        width: 100%;
+        margin: 50px 0 0 0;
+        
+        &__img{
+            padding: 0;
+            margin: 0;
+            width: 300px;
+            height: 380px;
+        }
+    }
+    
+    .article-1__contenedor{
+        margin: 0;
+        height: auto;
+    }
+    
+    .article-2{
+        margin: 40px 0 0 0;
+        
+        &__contenedor{
+            margin: 20px 0 0 0;
+        }
+    }
+    .aside__img-memoria{
+        margin-top: 0;
+    }
+    
+    .footer__box-logo{
+        padding: 0;
+    }
+    
+    .footer__box-map{
+        margin-left: 0;
+    }
+    
+    .footer__box-contact{
+        width: 200px;
+    
+        &--subtitulo{
+            width: 190px;
+        }
+    }
+    
+    .footer__seccion{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+    .box-banner{
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box-banner__logo--size{
+        margin: 0;
+    }
+    .box-banner__parrafo{
+        position: relative;
+        left: 0px;
+        text-align: center;
+    }
+    .box-banner__parrafo--tienda-1{
+        margin: 0px;
+    }
+    .aside__img-memoria{
+        margin-top: 0;
+    }
+    
+    .footer__box-logo{
+        padding: 0;
+    }
+    
+    .footer__box-map{
+        margin-left: 0;
+    }
+    
+    .footer__box-contact{
+        width: 200px;
+    
+        &--subtitulo{
+            width: 190px;
+        }
+    }
+    
+    .footer__seccion{
+        height: 350px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    
+    .aside__img-memoria{
+        margin-top: 0;
+    }
+    .box-banner__parrafo{
+        position: relative;
+        left: 0px;
     }
 }
