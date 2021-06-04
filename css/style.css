@@ -44,14 +44,14 @@
     opacity: 1; } }
 
 .box-banner__logo {
-  width: 500px;
-  height: 500px; }
+  width: 31rem;
+  height: 31rem; }
   .box-banner__logo--size {
     width: 75%;
-    height: 400px; }
+    height: 25rem; }
 
 .box-banner__parrafo--tienda {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 400;
   padding-top: 120px;
   letter-spacing: 7px;
@@ -60,7 +60,7 @@
   animation-name: aparecer;
   color: #000000; }
   .box-banner__parrafo--tienda-1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
     letter-spacing: 4px;
     animation-duration: 3s;
@@ -128,14 +128,13 @@
   font-size: 20px;
   padding: 10px; }
 
-/* -- FOOTER -- */
 .footer {
   display: flex;
   justify-content: center;
   background-color: #F7F7F8; }
   .footer__seccion {
     width: 80%;
-    height: 330px;
+    height: auto;
     justify-content: center; }
 
 .footer__box-logo {
@@ -144,8 +143,8 @@
   padding-left: 60px; }
 
 .footer__box-contact {
-  width: 400px;
-  height: 300px;
+  width: 25rem;
+  height: 19rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -163,15 +162,15 @@
 
 .footer__box-contact--subtitulo {
   border-bottom: solid 1px rosybrown;
-  width: 255px;
+  width: 250px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Quicksand', sans-serif; }
   .footer__box-contact--subtitulo:hover {
     color: rosybrown; }
 
 .footer__box-map {
-  width: 255px;
-  height: 300px;
+  width: 16rem;
+  height: 19rem;
   margin-top: 31px;
   margin-left: 80px; }
   .footer__box-map__enlaces {
@@ -231,7 +230,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 200px;
+  height: auto;
   margin-top: 50px;
   margin-bottom: 50px; }
   .divdatos__contenedor {
@@ -262,10 +261,9 @@ label {
   text-transform: lowercase;
   text-align: center; }
 
-/* -- SECCION 3 - HISTORIA -- */
 .aside {
-  width: 700px;
-  height: 800px; }
+  width: 44rem;
+  height: auto; }
   .aside__img-memoria {
     width: 500px;
     height: 700px;
@@ -274,7 +272,7 @@ label {
     margin-left: 100px; }
 
 .div-historia {
-  width: 800px;
+  width: 50rem;
   height: auto; }
   .div-historia__subtitulo {
     margin-top: 30px;
@@ -313,7 +311,7 @@ label {
       background-color: rgba(0, 0, 0, 0.6); }
 
 .article-3__box--parrafo-sahumerio, .article-3__box-2--parrafo-piedras, .article-3__box-3--parrafo-velas, .article-3__box-4--parrafo-difusores, .article-3__box-5--parrafo-mates {
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Quicksand', sans-serif;
@@ -327,8 +325,7 @@ label {
   height: 400px;
   background-image: url(../img/cuarzodos.jpg);
   background-size: cover;
-  position: relative;
-  max-width: 100%; }
+  position: relative; }
 
 .article-3__box-2--parrafo-piedras {
   padding-top: 20%; }
@@ -336,7 +333,6 @@ label {
 .article-3__box-3 {
   background-image: url(../img/candle.jpg);
   background-size: cover;
-  max-width: 100%;
   position: relative; }
   .article-3__box-3--parrafo-velas {
     padding-top: 20%; }
@@ -346,15 +342,13 @@ label {
   height: 600px;
   background-image: url(../img/difusor.jpg);
   background-size: cover;
-  position: relative;
-  max-width: 100%; }
+  position: relative; }
 
 .article-3__box-4--parrafo-difusores {
   padding-top: 40%; }
 
 .article-3__box-5 {
-  background-image: url(../img/mate.jpg);
-  max-width: 100%; }
+  background-image: url(../img/mate.jpg); }
   .article-3__box-5--parrafo-mates {
     padding-top: 40%; }
 
@@ -378,10 +372,12 @@ label {
     left: 0px; }
     .box-banner__parrafo--tienda {
       margin: 0px;
-      padding: 0px; }
+      padding: 0px;
+      text-transform: lowercase; }
       .box-banner__parrafo--tienda-1 {
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        text-transform: lowercase; }
   .article-1 {
     width: 100%;
     margin: 50px 0 0 0; }
@@ -397,50 +393,73 @@ label {
     margin: 40px 0 0 0; }
     .article-2__contenedor {
       margin: 20px 0 0 0; }
-  .aside__img-memoria {
-    margin-top: 0; }
   .footer__box-logo {
     padding: 0; }
-  .footer__box-map {
-    margin-left: 0; }
   .footer__box-contact {
-    width: 200px; }
-    .footer__box-contact--subtitulo {
-      width: 190px; }
-  .footer__seccion {
-    height: 400px; } }
+    align-items: flex-start;
+    margin: 0; }
+  .footer__box-map {
+    margin: 0; }
+  .div-historia__parrafo {
+    padding: 10px; }
+  .aside__img-memoria {
+    display: none; }
+  .divdatos__contenedor {
+    border: none;
+    padding: 0; }
+    .divdatos__contenedor-2 {
+      padding: 0; }
+  .divflex {
+    padding: 20px; }
+  .divdatos__contenedor__subtitulo {
+    padding-top: 0; }
+  .divflex {
+    margin-top: 40px; }
+  .article-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .article-3__box-2, .article-3__box-3, .article-3__box-3 {
+    width: 100%; }
+  .article-3__box-4, .article-3__box-5, .article-3__box-5 {
+    width: 100%;
+    height: 25rem; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .box-banner {
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
-  .box-banner__logo--size {
+    justify-content: center; }
+    .box-banner__logo {
+      width: auto;
+      height: auto; }
+      .box-banner__logo--size {
+        margin-left: 70px; }
+  .box-banner__parrafo {
+    left: 0; }
+    .box-banner__parrafo--tienda-1 {
+      margin-left: 50px; }
+  .article-1__img {
     margin: 0; }
-  .box-banner__parrafo {
-    position: relative;
-    left: 0px;
-    text-align: center; }
-  .box-banner__parrafo--tienda-1 {
-    margin: 0px; }
-  .aside__img-memoria {
-    margin-top: 0; }
-  .footer__box-logo {
-    padding: 0; }
-  .footer__box-map {
-    margin-left: 0; }
-  .footer__box-contact {
-    width: 200px; }
-    .footer__box-contact--subtitulo {
-      width: 190px; }
+  .article-2__contenedor {
+    width: 350px; }
   .footer__seccion {
-    height: 350px; } }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
+    width: 100%;
+    justify-content: start;
+    height: auto; }
+  .footer__box-contact {
+    width: 256px; }
+    .footer__box-contact a {
+      margin-right: 100px; }
+  .footer__box-map {
+    margin: 0; }
+    .footer__box-map--subtitulo {
+      margin-top: 30px; }
+  .footer__box-logo {
+    width: 256px;
+    padding: 0; }
   .aside__img-memoria {
-    margin-top: 0; }
-  .box-banner__parrafo {
-    position: relative;
-    left: 0px; } }
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .article-3__box-4, .article-3__box-5, .article-3__box-5 {
+    height: 25rem; }
+  .divdatos {
+    width: 100%; } }

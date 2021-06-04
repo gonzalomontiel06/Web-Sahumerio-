@@ -17,12 +17,12 @@
     </head>
 <body id="body">
     <div class="container-fluid p-0">    
-        <header class="col-lg-12 col-md-12 col-sm-12 img-fluid background-img m-0">
+        <header class="header m-0">
             
             <!-- BARRA DE NAVEGACION -->
             
-            <nav class="navegador">
-                <ul class="d-flex flex-row bd-highlight mb-3 justify-content-center navegador__listanav">
+            <nav class="col-lg-12 col-md-12 col-sm-12 navegador">
+                <ul class="d-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap navegador__listanav">
                     <li class="p-2 bd-highlight"><a href="../index.html">Home</a></li>
                     <li class="p-2 bd-highlight"><a href="tienda.html">Tienda</a></li>
                     <li class="p-2 bd-highlight"><a href="nosotros.html">Nosotros</a></li>
@@ -31,15 +31,14 @@
                 </ul>
             </nav>
             
-            <!-- IMG FONDO + LOGO + TITULO -->
+            <!-- LOGO + TITULO -->
             
-            <section class="col-lg-12 col-md-12 col-sm-12 box-banner">
-                <div class="box-banner__logo"><a href="../index.html"><img class="box-banner__logo--size" src="../img/logotransparente.png" alt="img-logo"></a></div>
-                <div class="box-banner__parrafo">
-                    <h1 class="box-banner__parrafo--tienda">galeria</h1>
+            <section class="row box-banner">
+                <div class="col-lg-6 col-md-12 col-sm-12 box-banner__logo"><a href="../index.html"><img class="box-banner__logo--size img-fluid" src="../img/logotransparente.png" alt="img-logo"></a></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 box-banner__parrafo">
+                    <h1 class="box-banner__parrafo--tienda">galeria<h1>
                 </div>
             </section>
-        
         </header>
         
         <h2 class="subtitulo-productos">nuestros productos</h2>
@@ -48,7 +47,7 @@
         
         <main class="d-flex justify-content-center mb-5">
             <article class="row article-3">
-                <div class="col-lg-12 col-md-12 col-sm-12 article-3__box p-0">
+                <div class="col-lg-12 col-md-12 col-sm-12 article-3__box img-fluid p-0">
                     <p class="article-3__box--parrafo-sahumerio">sahumerios</p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 article-3__box-2 p-0">
@@ -68,12 +67,12 @@
         
         <!-- FOOTER -->
         
-        <footer class="footer col-lg-12 col-md-12 col-sm-12">
-            <section class="d-flex footer__seccion">
-                <div class="footer__box-logo">
-                    <a href="../index.html"><img src="../img/logotransparente.png" alt="logo-marca" width="300px" height="300px"></a>
+        <footer class="footer">
+            <section class="row d-flex footer__seccion">
+                <div class="col-lg-4 col-md-4 col-sm-12 footer__box-logo">
+                    <a href="../index.html"><img src="../img/logotransparente.png" class="img-fluid" alt="logo-marca" width="300px" height="300px"></a>
                 </div>
-                <div class="footer__box-contact">
+                <div class="col-lg-4 col-md-4 col-sm-6 footer__box-contact">
                     <div class="footer__box-contact--subtitulo"><h4>contactanos</h4></div>
                     <a href="https://wa.me/541160413241?text=Hola,%20te%20escribo%20a%20traves%20de%20la%20tienda%20El%20Loco%20Del%20Sahumerio..">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -95,7 +94,7 @@
                         </svg> Ubicacion
                     </a>
                 </div>
-                <div class="footer__box-map">
+                <div class="col-lg-4 col-md-4 col-sm-6 footer__box-map">
                     <h4 class="footer__box-map--subtitulo">enlaces</h4>
                     <div class="footer__box-map__enlaces">
                         <a href="../index.html">home</a>
