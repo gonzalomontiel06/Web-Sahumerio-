@@ -404,6 +404,9 @@ label {
     padding: 10px; }
   .aside__img-memoria {
     display: none; }
+  .divdatos {
+    display: flex;
+    flex-direction: column; }
   .divdatos__contenedor {
     border: none;
     padding: 0; }
