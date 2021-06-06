@@ -11,7 +11,7 @@
 .header {
   width: 100%;
   background-image: url(../img/sahumerio.jpg);
-  background-size: 100% 35rem; }
+  background-size: 100% 34rem; }
 
 .navegador {
   width: 100%;
@@ -35,7 +35,7 @@
     width: 600px;
     text-align: center;
     position: relative;
-    left: 130px; }
+    left: 160px; }
 
 @keyframes aparecer {
   0% {
@@ -70,7 +70,7 @@
     margin-left: 80px; }
 
 /* -- SECCION 2 -- */
-.subtitulo, .subtitulo-productos {
+.subtitulo, .subtitulo-productos, .tienda__productos--subtitulo {
   padding-top: 50px;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -465,4 +465,51 @@ label {
   .article-3__box-4, .article-3__box-5, .article-3__box-5 {
     height: 25rem; }
   .divdatos {
-    width: 100%; } }
+    width: 100%; }
+  .tienda__productos__informacion {
+    margin: 0; } }
+
+.tienda__navegacion {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px; }
+
+.tienda__productos {
+  width: 100%; }
+
+.tienda__productos__box--1, .tienda__productos__box--2, .tienda__productos__box--3, .tienda__productos__box--4 {
+  width: 20%;
+  height: 31rem;
+  display: flex;
+  flex-direction: column; }
+
+.tienda__productos__box--1--parrafos, .tienda__productos__catalogo__item-1--parrafo {
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em; }
+
+.tienda__productos__informacion {
+  width: 100%; }
+
+.tienda__productos__informacion--box--1, .tienda__productos__informacion--box--2, .tienda__productos__informacion--box--3 {
+  width: 18rem;
+  height: 16rem;
+  background-color: #f8edeb;
+  text-align: center;
+  padding-top: 70px;
+  margin: 60px;
+  font-size: 2em;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+.tienda__productos__catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  .tienda__productos__catalogo__item-1 {
+    width: 30%;
+    height: 30rem; }
+
+.tienda__productos--margin {
+  margin-top: 120px; }
