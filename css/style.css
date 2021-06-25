@@ -413,7 +413,7 @@ label {
       height: 25rem;
       padding: 0; }
       .header__logo--size {
-        margin: 0;
+        padding: 0;
         width: 100%; }
   .article-1 {
     width: 100%;
@@ -439,18 +439,27 @@ label {
       display: flex;
       justify-content: center; }
     .footer__box-contact {
-      padding: 32px; }
+      width: 50%;
+      align-items: center; }
+      .footer__box-contact--subtitulo {
+        width: auto; }
+      .footer__box-contact a {
+        margin-right: 0;
+        font-size: 1em; }
     .footer__box-map {
-      width: 100%;
-      padding: 32px;
-      margin: 0; }
+      width: 50%;
+      margin: 0;
+      margin-top: 20px; }
+      .footer__box-map__enlaces a {
+        font-size: 1em; }
   .div-historia__parrafo {
     padding: 5px; }
   .aside__img-memoria {
     display: none; }
   .divdatos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     .divdatos__contenedor {
       border: none;
       padding: 0; }
