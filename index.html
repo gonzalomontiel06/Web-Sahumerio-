@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/logo-transparente-ico.png">
         <title>Loco del Sahumerio</title>
     </head>
 <body id="body">
@@ -23,8 +24,8 @@
             
             <!-- BARRA DE NAVEGACION -->
             
-            <nav class="col-lg-12 col-md-12 col-sm-12 navegador">
-                <ul class="d-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap navegador__listanav">
+            <nav class="col-lg-12 col-md-12 col-sm-12 header__navegador">
+                <ul class="p-0 d-flex flex-row bd-highlight mb-3 justify-content-center flex-wrap header__navegador__listanav">
                     <li class="p-2 bd-highlight"><a href="index.html">Home</a></li>
                     <li class="p-2 bd-highlight"><a href="pages/tienda.html">Tienda</a></li>
                     <li class="p-2 bd-highlight"><a href="pages/nosotros.html">Nosotros</a></li>
@@ -33,25 +34,36 @@
                 </ul>
             </nav>
             
-            <!-- LOGO + TITULO -->
+            <!-- LOGO -->
             
-            <section class="row box-banner">
-                <div class="col-lg-6 col-md-4 col-sm-12 box-banner__logo"><a href="index.html"><img class="box-banner__logo--size img-fluid" src="img/logotransparente.png" alt="img-logo"></a></div>
-                <div class="col-lg-6 col-md-8 col-sm-12 box-banner__parrafo">
-                    <h1 class="box-banner__parrafo--tienda">tienda<h1>
-                    <h2 class="box-banner__parrafo--tienda-1">de sahumerios</h2>
+            <section class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
+                <div class="header__logo">
+                    <a href="index.html"><img class="header__logo--size img-fluid" src="img/logotransparente.png" alt="img-logo"></a>
                 </div>
             </section>
-        </header>
         
-        <h2 class="subtitulo">¿Conoces su uso?</h2>
+        </header>
+
+        <!-- INICIO DE SECCION -->
+        
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="titulo">tienda<h1>
+            <h2 class="titulo-1">de Sahumerios</h2>
+            <div class="titulo__border">
+                <!-- DIV BORDER BOTTOM DE TITULO -->
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-center">
+            <h2 class="subtitulo">¿Conoces su uso?</h2>
+        </div>
         
         <!-- PRIMER ARTICULO -->
         
         <main class="p-0 m-0 main-1">
             <div data-aos="zoom-in-right">    
                 <article class="row article-1">
-                    <img class="col-lg-6 col-md-6 col-sm-12 article-1__img" src="img/conosahumerio.jpg" alt="sahumerio-cono">
+                    <img class="col-lg-6 col-md-6 col-sm-12 img-fluid article-1__img" src="img/conosahumerio.jpg" alt="sahumerio-cono">
                     <div class="col-lg-6 col-md-6 col-sm-12 article-1__contenedor">
                         <p class="article-1__parrafo">Los sahumerios hacen referencia al proceso y resultado de sahumar, por lo general a partir de inciensos, para perfumar el ambiente o proceder a su purificación. Los inciensos son velas que se obtienen de resinas aromáticas vegetales.</p>
                         <p class="article-1__parrafo">En la cultura popular se dice que usar sahumerios puede ayudar a cambiar la vibración del hogar, sobre todo cuando se perciben energías negativas.</p>
@@ -63,7 +75,7 @@
             
             <div data-aos="zoom-in-right">    
                 <article class="row article-2"> 
-                        <img class="col-lg-6 col-md-6 col-sm-12 article-2__img" src="img/sahumerio1.jpg" alt="sahumerio-varilla">
+                        <img class="col-lg-6 col-md-6 col-sm-12 img-fluid article-2__img" src="img/sahumerio1.jpg" alt="sahumerio-varilla">
                         <div class="col-lg-6 col-md-6 col-sm-12 article-2__contenedor">
                             <p class="article-2__parrafo-2">El incienso, tanto en sahumerio, madera o carboncitos, se usa de forma generalizada tanto en fitoterapia como en aromaterapia para aliviar y armonizar el cuerpo y la mente.</p>
                             <p class="article-2__parrafo-2">Ayuda a reducir la ansiedad al desacelerar el sistema nervioso, lo que hace que su cuerpo y mente se relajen</p>
@@ -75,7 +87,7 @@
         <!-- INICIO FOOTER -->
         
         <footer class="footer">
-            <section class="row d-flex footer__seccion">
+            <section class="row d-flex align-items-center footer__seccion">
                 <div class="col-lg-4 col-md-4 col-sm-12 footer__box-logo">
                     <a href="index.html"><img src="img/logotransparente.png" class="img-fluid" alt="logo-marca" width="300px" height="300px"></a>
                 </div>
